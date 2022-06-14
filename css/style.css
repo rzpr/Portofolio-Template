@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=JetBrains+Mono:wght@300&family=PT+Mono&display=swap');
+body {
+	background-color: #121317;
+}
+img.rounded-circle{
+	border: 3px solid #7e3af2;
+}
+
+.card {
+	background-color: #1a1c23;
+}
+h1.title {
+	font-size: 23px;
+	font-family:  'IBM Plex Mono', monospace;
+	color: #fff;
+}
+p.title2 {
+	font-size: 11px;
+	font-family:  'IBM Plex Mono', monospace;
+	color: #fff;
+}
+.footer {
+  flex-shrink: 0;
+}
+.card-bio {
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+
+}
+p.bio-body {
+	color: #fff;
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 14px;
+}
+.text-center.icon {
+	color: #fff;
+	font-size: 22px;
+}
+
+span.myBadge{
+	color: #7e3af2;
+}
+h1.header {
+	font-size: 18px;
+	color: #fff;
+	font-family: 'IBM Plex Mono', monospace;
+}
+.progress-bar {
+	background-color: #7e3af2;
+}
+h2.title {
+  background: #7e3af2;
+  color: #ffffff;
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+  letter-spacing: 1px;
+  margin: 0 0 30px;
+  padding: 10px 15px 8px;
+  text-transform: uppercase;
+}
+
+footer {
+	position:fixed;
+	bottom:0;
+	left:0;
+	width: 100%;
+	height: 24px;
+	background-color: #7e3af2;
+
+}
+p.footer-title {
+	font-size: 13px;
+	position: relative;
+	color: #fff;
+	font-family: 'IBM Plex Mono', monospace;
+
+}
