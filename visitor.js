@@ -1,13 +1,7 @@
-var counterContainer = document.querySelector(".footer-title");
-var resetButton = document.querySelector("#reset");
-var visitCount = localStorage.getItem("page_view");
-
-// Check if page_view entry is present
-if (visitCount) {
-  visitCount = Number(visitCount) + 1;
-  localStorage.setItem("page_view", visitCount);
-} else {
-  visitCount = 1;
-  localStorage.setItem("page_view", 1);
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://api.countapi.xyz/hit/rezzaapr.my.id/visits");
+xhr.responseType = "json";
+xhr.onload = function() {
+  document.querySelector('.footer-title').innerHTML = 'Total Visitor : ' + this.response.value;
 }
-counterContainer.innerHTML = 'Visitor This Website : '+visitCount;
+xhr.send();
